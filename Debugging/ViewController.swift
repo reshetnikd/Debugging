@@ -18,9 +18,13 @@ class ViewController: UIViewController {
         print(1, 2, 3, 4, 5, separator: "-")
         print("Some message", terminator: "")
         
-        assert(1 == 1, "Math failure!")
+//        assert(1 == 1, "Math failure!")
 //        assert(1 == 2, "Math failure!")
-        assert(myReallySlowMethod() == true, "The slow method returned false, which is a bad thing!")
+//        assert(myReallySlowMethod() == true, "The slow method returned false, which is a bad thing!")
+        
+        for i in 1...100 {
+            print("Got number \(i)")
+        }
     }
     
     func myReallySlowMethod() -> Bool {
